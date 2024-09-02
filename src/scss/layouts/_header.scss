@@ -1,0 +1,161 @@
+/*--------------------------------------
+	Header
+--------------------------------------*/
+
+// Notes...
+
+.header {
+
+	.wrap {
+
+		position: relative;
+		height: 114px;
+		overflow: hidden;
+
+		@media screen and (min-width: 530px) {
+
+			height: 190px;
+
+		}
+
+		@media screen and (min-width: 800px) {
+
+			height: 280px;
+
+		}
+
+		&:before {
+
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 30px;
+			// background: rgb(242, 242, 242);
+			background: linear-gradient(to bottom, rgba(242, 242, 242, 0) 0%, rgba(242, 242, 242, 1) 100%);
+			mix-blend-mode: multiply;
+			z-index: 10;
+
+			@media screen and (min-width: 530px) {
+
+				height: 60px;
+
+			}
+
+			@media screen and (min-width: 800px) {
+
+				height: 80px;
+
+			}
+
+		}
+
+	}
+
+}
+
+		.logo {
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url(../img/fade-small.png) left center no-repeat;
+			@include hide-text;
+			z-index: 5;
+
+			@media screen and (min-width: 530px) {
+
+				background-size: 450px 100%;
+
+			}
+
+			@media screen and (min-width: 600px) {
+
+				background-size: 480px 100%;
+
+			}
+
+			@media screen and (min-width: 730px) {
+
+				background-size: 550px 100%;
+
+			}
+
+			@media screen and (min-width: 800px) {
+
+				background-image: url(../img/fade-large.png);
+				background-size: 1140px 100%;
+
+			}
+
+			@media screen and (min-width: 900px) {
+
+				background-size: 1200px 100%;
+
+			}
+
+			span {
+
+				position: relative;
+				top: 50%;
+				left: 26px;
+				display: block;
+				width: 136px;
+				height: 52px;
+				margin-top: -29px;
+				background: url(../img/logo.png) center center no-repeat;
+				background-size: 136px 52px;
+
+				@media screen and (min-width: 600px) {
+
+					left: 46px;
+
+				}
+
+				@media screen and (min-width: 800px) {
+
+					// Adjustment...
+
+					width: 247px;
+					height: 94px;
+					margin-top: -58px;
+					background-size: 247px 94px;
+
+				}
+
+				@media screen and (min-width: 1000px) {
+
+					left: 66px;
+
+				}
+
+			}
+
+		}
+
+		img {
+
+			position: absolute;
+			right: 0;
+			top: 0;
+			max-width: none;
+			height: 100%;
+			z-index: 1;
+
+			@media screen and (min-width: 530px) {
+
+				right: -30px;
+
+			}
+
+			@media screen and (min-width: 800px) {
+
+				right: 0;
+
+			}
+
+		}

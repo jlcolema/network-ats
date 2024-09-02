@@ -1,0 +1,65 @@
+/*--------------------------------------
+	Pre-Header
+--------------------------------------*/
+
+// Notes...
+
+.pre-header {
+
+	padding-top: 14px;
+	padding-bottom: 14px;
+	color: $white;
+	background: $blue;
+
+	@media screen and (min-width: 800px) {
+
+		padding-top: 18px;
+		padding-bottom: 18px;
+
+	}
+
+	.wrap {}
+
+		p {
+
+			margin: 0;
+			@include font-size(10);
+			line-height: (14/10);
+			text-align: center;
+			text-transform: uppercase;
+
+			@media screen and (min-width: 440px) {
+
+				@include font-size(13);
+				line-height: (16/13);
+
+			}
+
+			@media screen and (min-width: 800px) {
+
+				@include font-size(16);
+				line-height: (20/16);
+
+			}
+
+		}
+
+			span {
+
+				display: inline;
+
+				@media screen and (min-width: 375px) {
+
+					display: block;
+
+				}
+
+				@media screen and (min-width: 860px) {
+
+					display: inline;
+
+				}
+
+			}
+
+}
